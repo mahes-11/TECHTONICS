@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Birmohan Singh - SLIET Mentorship</title>
+    <link rel="stylesheet" href="mentor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for stars -->
+</head>
+<body>
+    <header>
+        <h1>Dr. Manoj Sachan</h1>
+    </header>
+
+    <div class="container">
+        <!-- Left Section: Faculty Details -->
+        <div class="left-section">
+            <div class="faculty-details">
+                <img src="../assets/Dr. Manoj Sachan.jpg" alt="Dr. Birmohan Singh">
+                <p><strong>Department:</strong> Computer Science & Engineering</p>
+                <p><strong>Qualification:</strong> Ph.D., M.E</p>
+                <p><strong>Experience:</strong> About 30 years</p>
+                <p><strong>Mobile:</strong> +91 9876543210</p>
+                <p><strong>Email:</strong> birmohansingh@sliet.ac.in</p>
+                
+                <p><a href="http://cs.sliet.ac.in/people/birmohan" target="_blank">Know more about Dr. Manoj Sachan</a></p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span class="rating-number">(4.0)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Booking System -->
+        <div class="right-section">
+            <div class="session-details">
+                <div class="session-info">
+                    <h2>Available Slots</h2>
+                    <div class="search-request">
+                        <input type="text" id="search" placeholder="Search slots...">
+                        <button id="request-btn">Request Availability</button>
+                    </div>
+                    <table id="slots-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Start Time</th>
+                                <th>End Time</th>
+                                <th>Select</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>27 Nov 2024</td>
+                                <td>04:00 PM</td>
+                                <td>04:30 PM</td>
+                                <td><button class="select-btn">Select</button></td>
+                            </tr>
+                            <tr>
+                                <td>27 Nov 2024</td>
+                                <td>04:30 PM</td>
+                                <td>05:00 PM</td>
+                                <td><button class="select-btn">Select</button></td>
+                            </tr>
+                            <tr>
+                                <td>27 Nov 2024</td>
+                                <td>05:00 PM</td>
+                                <td>05:30 PM</td>
+                                <td><button class="select-btn">Select</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        <button id="prev-btn">Previous</button>
+                        <button id="next-btn">Next</button>
+                    </div>
+                    <div class="session-book">
+                        <p><strong>Session Details</strong></p>
+                        <p>Date: <span id="session-date">27 Nov 2024</span></p>
+                        <p>Start Time: <span id="session-start">04:00 PM</span></p>
+                        <p>End Time: <span id="session-end">04:30 PM</span></p>
+                        <button class="book-now-btn" onclick="showPopup()">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments Section at the Bottom -->
+    <div class="comment-section">
+        <h2>Comments</h2>
+        <form>
+            <textarea name="comment" placeholder="Enter your comment here..."></textarea>
+            <button type="submit">Submit Comment</button>
+        </form>
+        <div class="comments-list">
+            <p><strong>User1:</strong> Very insightful session!</p>
+            <p><strong>User2:</strong> Great mentor!</p>
+        </div>
+    </div>
+
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <p>Booking successful!</p>
+        </div>
+    </div>
+
+    <script src="mentor.js"></script>
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
