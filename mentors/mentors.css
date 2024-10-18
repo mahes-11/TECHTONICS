@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E4E0E1; /* Updated background color */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #493628; /* Updated text color */
+}
+
+.filter-buttons {
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #AB886D; /* Updated button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-btn:hover {
+    background-color: #493628; /* Updated button hover color */
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.mentor-card {
+    background-color: #D6C0B3; /* Updated card background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mentor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mentor-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.mentor-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #493628; /* Updated text color */
+}
+
+.mentor-details p {
+    font-size: 14px;
+    color: #493628; /* Updated text color */
+    margin-bottom: 10px;
+}
+
+.book-btn {
+    padding: 10px 20px;
+    background-color: #AB886D; /* Updated button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: #493628; /* Updated button hover color */
+}
+
+.rating {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #FFCC00; /* Star color */
+}
+
+.rating i {
+    margin-right: 2px;
+}
+
+.rating-number {
+    font-size: 14px;
+    color: #666;
+    margin-left: 8px;
+}
+
+/* Style for empty stars */
+.far.fa-star {
+    color: #D3D3D3; /* Light gray for empty stars */
+}
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #AB886D;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons {
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #AB886D; /* Updated button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-btn:hover {
+    background-color: #493628; /* Updated button hover color */
+}
+

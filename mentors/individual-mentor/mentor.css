@@ -1,0 +1,167 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e0e1; /* Background color */
+}
+
+/* Header Styling */
+header {
+    background-color: #d6c0b3; /* Header color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Left Section: Faculty Details */
+.left-section {
+    width: 50%;
+    padding-right: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(20px); /* Slide-in effect */
+    animation: slideIn 0.5s forwards; /* Slide-in animation */
+}
+
+.faculty-details {
+    text-align: center;
+}
+
+.faculty-details img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.rating {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffcc00; /* Star color */
+}
+
+/* Right Section: Booking System */
+.right-section {
+    width: 50%;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(20px); /* Slide-in effect */
+    animation: slideIn 0.5s forwards; /* Slide-in animation */
+    animation-delay: 0.2s; /* Slight delay for staggered effect */
+}
+
+.search-request {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#request-btn {
+    padding: 10px 20px;
+    background-color: #ab886d; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+#request-btn:hover {
+    background-color: #d49362; /* Hover color */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.select-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Select button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.select-btn:hover {
+    background-color: #45a049; /* Select button hover color */
+}
+
+.book-now-btn {
+    padding: 10px 20px;
+    background-color: #d49362; /* Book now button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.book-now-btn:hover {
+    background-color: #ab886d; /* Book now button hover color */
+}
+
+/* Comment Section Styling */
+.comment-section {
+    background-color: #d6c0b3; /* Updated background color */
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Rounded corners */
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(20px); /* Slide-in effect */
+    animation: slideIn 0.5s forwards; /* Slide-in animation */
+    animation-delay: 0.4s; /* Slight delay for staggered effect */
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comments-list p {
+    margin-bottom: 10px;
+    color: #4a4a4a; /* Text color */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Hover effect for comments */
+.comments-list p:hover {
+    color: #ff5722; /* Change color on hover */
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+    to {
+        opacity: 1; /* Final opacity */
+        transform: translateY(0); /* Final position */
+    }
+}
