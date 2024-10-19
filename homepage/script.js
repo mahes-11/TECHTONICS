@@ -6,3 +6,11 @@ const toggleNav = () => {
   mobileNav.classList.toggle("hamburger-active");
 };
 mobileNav.addEventListener("click", () => toggleNav());
+
+
+
+
+// Example chat button click event
+chatButton.addEventListener("click", () => {
+  window.location.href = "chat\chat.html"; // Update this with the actual URL of your chat page
+});

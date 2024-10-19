@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e4e0e1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #d6c0b3;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    color: #493628;
+    font-size: 2.5rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+main {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.signup-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-out;
+}
+
+.signup-form h2 {
+    text-align: center;
+    color: #493628;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #493628;
+    font-weight: bold;
+}
+
+.signup-form input,
+.signup-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6c0b3;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+    box-shadow: 0 0 8px rgba(171, 136, 109, 0.5);
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #d6c0b3;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #ab886d;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(171, 136, 109, 0.4);
+}
+
+#confirmation {
+    margin-top: 20px;
+    color: #493628;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .signup-form {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

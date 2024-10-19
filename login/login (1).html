@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="login (1).css">
+    <script>
+        function redirectToHomePage() {
+            window.location.href = "../homepage/index.html"; 
+        }
+    </script>
+</head>
+<body>
+
+    
+
+    <div class="container">
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Log In</h1>
+                <input type="text" placeholder="Email id"  />
+                <input type="password" placeholder="Password"  />
+                <label class="checkbox-container">
+                    Remember me
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <a href="../homepage/index.html">
+                    <button type="button" onclick="redirectToHomePage()">Log In</button>
+                </a>
+                
+                
+                <a href="#" class="create-account">Create an account</a>
+                <div class="social-container">
+                    
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </form>
+        </div>
+       
+    </div>
+</body>
+</html>

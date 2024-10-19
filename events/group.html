@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Groups</title>
+    <link rel="stylesheet" href="group.css">
+   
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+          <img src="../homepage/assets/download.png" alt="logo" />
+          <h1>SLIET Mentorship Platform</h1>
+        </div>
+        <ul>
+          <li>
+            <a href="../homepage/index.html">Home</a>
+          </li>
+          <li>
+            <a href="../mentors/mentors.html">Mentors</a>
+          </li>
+          <li>
+            <a href="../booking-status/booking status.html">Booking status</a>
+          </li>
+          <li>
+            <a href="../events/group.html">Events</a>
+          </li>
+          <li>
+            <a href="../login/login (1).html">Log in</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </nav>
+      <div class="menubar">
+        <ul>
+          <li>
+            <a href="../homepage/index.html">Home</a>
+          </li>
+          <li>
+            <a href="../mentors/mentors.html">Mentors</a>
+          </li>
+          <li>
+            <a href="../booking-status/booking status.html">Booking status</a>
+          </li>
+          <li>
+            <a href="../events/group.html">Events</a>
+          </li>
+          <li>
+            <a href="../login/login (1).html">Log in</a>
+          </li>
+        </ul>
+      </div>
+
+      <script src="../homepage/script.js"></script>
+    <main>
+        <section class="group-list">
+            <h2>Groups</h2>
+            <ul>
+                <li><a href="#" id="aiml-link" onclick="showGroup('aiml')">AI/ML</a></li>
+                <li><a href="#" id="uiux-link" onclick="showGroup('uiux')">UI/UX</a></li>
+                <li><a href="#" id="cybersecurity-link" onclick="showGroup('cybersecurity')">Cyber Security</a></li>
+                <li><a href="#" id="networking-link" onclick="showGroup('networking')">Computer Networking</a></li>
+                <li><a href="#" id="hacking-link" onclick="showGroup('hacking')">Ethical Hacking</a></li>
+            </ul>
+            
+        </section>
+        <section class="group-details">
+            <!-- AI/ML Section -->
+            <div id="aiml" class="group">
+                <h3>AI/ML</h3>
+                <div class="messages">
+                    <div class="message staff">
+                        <p><strong>Staff:</strong> Upcoming AI/ML workshop on Oct 25th.</p>
+                        <a href="signup.html" class="register-button">Register</a>
+                        <a href="#" class="register-button">Event Details</a>
+                    </div>
+                    <div class="message staff">
+                        <p><strong>Staff:</strong> Paper submission deadline extended to Nov 1st.</p>
+                        <a href="signup.html" class="register-button">Register</a>
+                        <a href="#" class="register-button">Event Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI/UX Section -->
+            <div id="uiux" class="group hidden">
+                <h3>UI/UX</h3>
+                <div class="messages">
+                    <div class="message staff">
+                        <p><strong>Staff:</strong> Join the UI/UX design challenge this weekend.</p>
+                        <a href="signup.html" class="register-button">Register</a>
+                        <a href="#" class="register-button">Event Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cyber Security Section -->
+            <div id="cybersecurity" class="group hidden">
+                <h3>Cyber Security</h3>
+                <div class="messages">
+                    <div class="message staff">
+                        <p><strong>Staff:</strong> Cyber security hackathon announced for Dec 15th.</p>
+                        <a href="signup.html" class="register-button">Register</a>
+                        <a href="#" class="register-button">Event Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Networking Section -->
+            <div id="networking" class="group hidden">
+                <h3>Computer Networking</h3>
+                <div class="messages">
+                    <div class="message staff">
+                        <p><strong>Staff:</strong> Networking seminar next week, sign up now.</p>
+                        <a href="signup.html" class="register-button">Register</a>
+                        <a href="#" class="register-button">Event Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ethical Hacking Section -->
+            <div id="hacking" class="group hidden">
+                <h3>Ethical Hacking</h3>
+                <div class="messages">
+                    <div class="message staff">
+                        <p><strong>Staff:</strong> Ethical hacking contest: register by Nov 20th.</p>
+                        <a href="signup.html" class="register-button">Register</a>
+                        <a href="#" class="register-button">Event Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="group.js"></script>
+</body>
+</html>

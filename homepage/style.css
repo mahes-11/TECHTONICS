@@ -421,3 +421,30 @@ button:hover {
     margin: 0.5rem 0;
     color: #493628; /* Dark Brown */
 }
+
+
+#chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color:rgb(237, 235, 235);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #chat-button img {
+    width: 200%;
+    height: 70%;
+  }
+  
+  #chat-button:hover {
+    background-color: #d6c0b3; /* Beige */
+  }
+  

@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 100%; /* Full width */
+    max-width: 400px; /* Set a max width */
+    overflow: hidden;
+}
+
+.form-container {
+    padding: 50px;
+    width: 100%; /* Take full width of container */
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #d49362;
+    background-color: #d49362;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 45px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #d49362;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.create-account {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social:hover {
+    color: #d49362;
+}
