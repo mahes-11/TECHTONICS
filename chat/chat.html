@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp-like Chat</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Chat Sidebar (Contacts) -->
+        <div class="chat-sidebar">
+            <div class="sidebar-header">
+                <h2>Chats</h2>
+            </div>
+            <ul class="chat-list" id="chat-list">
+                <!-- Dynamically load chats -->
+                <li class="chat-item active" data-chat-id="1">
+                    <div class="contact">
+                        <img src="../mentors/assets/Dr. Major Singh Goraya.jpg" alt="Dr. Major Singh Goraya">
+                        <div class="contact-info">
+                            <h4>Dr. Major Singh Goraya</h4>
+                            <p>Last message...</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="chat-item" data-chat-id="2">
+                    <div class="contact">
+                        <img src="../mentors/assets/Dr. Birmohan Singh.jpg" alt="Dr. Birmohan Singh">
+                        <div class="contact-info">
+                            <h4>Dr. Birmohan Singh</h4>
+                            <p>Last message...</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Chat Window -->
+        <div class="chat-window">
+            <div class="chat-header">
+                <img src="../mentors/assets/Dr. Major Singh Goraya.jpg" alt="Dr. Major Singh Goraya">
+                <h4>Dr. Major Singh Goraya</h4>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Default chat messages -->
+                <div class="message other">Hello! How can I help you today?</div>
+                <div class="message self">Hi! I need some assistance with my account.</div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type a message...">
+                <button id="send-btn">Send</button>
+                <input type="file" id="file-input" style="display: none;">
+                <button id="attach-btn">&#128206;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

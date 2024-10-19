@@ -309,24 +309,7 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Section */
-#contact {
-    background: #4CAF50; /* Green background */
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-    margin-top: 2rem;
-    border-top: 1px solid #ddd;
-}
 
-#contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-#contact p {
-    margin: 0.5rem 0;
-}
 
 /* Button Styles */
 button {
